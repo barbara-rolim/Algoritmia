@@ -1,4 +1,4 @@
-package FichaPratica2;
+package FichaPratica02;
 
 import java.util.Scanner;
 
@@ -7,7 +7,7 @@ import java.util.Scanner;
 //15 a 20 inclusive taxa 30%
 //20 a 25 inclusive taxa 35%
 //+25 paga 40%
-import java.util.Scanner;
+
 
 public class Ex03 {
     public static void main(String[] args) {

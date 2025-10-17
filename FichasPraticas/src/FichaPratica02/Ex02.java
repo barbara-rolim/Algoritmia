@@ -1,4 +1,4 @@
-package FichaPratica2;
+package FichaPratica02;
 
 import java.util.Scanner;
 
@@ -11,7 +11,7 @@ public class Ex02 {
         Scanner input = new Scanner(System.in);
 
         //variaveis
-        int salario, taxa;
+        int salario;
 
         //print
         System.out.println("introduza o valor do seu salario anual: ");

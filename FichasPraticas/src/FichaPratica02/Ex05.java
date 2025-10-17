@@ -1,4 +1,4 @@
-package FichaPratica2;
+package FichaPratica02;
 
 import java.util.Scanner;
 

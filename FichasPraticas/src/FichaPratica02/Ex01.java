@@ -1,4 +1,4 @@
-package FichaPratica2;
+package FichaPratica02;
 
 //leia dois numeros inteiros e escreva na consola o maior deles
 
