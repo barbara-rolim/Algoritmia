@@ -10,7 +10,8 @@ import java.util.Scanner;
             int num = input.nextInt();
 
             System.out.print("Introduza uma mensagem: ");
-            String mensagem = input.next();
+            input.nextLine();
+            String mensagem = input.nextLine();
 
             int i = 0;
             while (i < num) {

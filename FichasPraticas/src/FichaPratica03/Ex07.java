@@ -1,18 +1,15 @@
 package FichaPratica03;
 
-import java.util.Scanner;
-
 public class Ex07 {
     public static void main(String[] args) {
 
-        int num = 1;
-        while (num <= 100) {
-            System.out.println(num);
-            num++;
+        int i = 1, soma = 0;
+
+        while (i <= 100) {
+            System.out.println(i);
+            soma = soma + i;
+            i++;
         }
-        int n = 1;
-        int temp = 0;
-        while (n <= 100) temp += n++;
-        System.out.println(temp);
+        System.out.println("Somatório: " + soma);
     }
 }
