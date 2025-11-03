@@ -2,7 +2,7 @@ package FichaPratica05;
 
 import java.util.Scanner;
 
-public class Ex08 {
+public class Ex10 {
     public static void main(String[] args) {
 
         // Importar o Scanner
@@ -29,5 +29,17 @@ public class Ex08 {
             System.out.println();
         }
 
+        System.out.print("\nInsira o numero para pesquisar: ");
+        int num = input.nextInt(), cont=0;
+
+        for (int linha = 0; linha < matriz.length ; linha++) {
+            for (int coluna = 0; coluna < matriz[0].length ; coluna++) {
+
+                if(matriz[linha][coluna] == num) {
+                    cont++;
+                }
+            }
+        }
+            System.out.println("Número " + num + " aparece " + cont + " vezes na matriz");
     }
 }

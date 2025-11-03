@@ -25,17 +25,22 @@ public class Ex07 {
             System.out.println(vetor[i]);
         }
 
-        int maiorPar = vetor[0];
+        int maiorPar = -1;
 
         // Impressão do vetor
         for (int i = 0; i < vetor.length; i++) {
 
-            if (vetor[i] > maiorPar && vetor[i] % 2 == 0) {
+            if (vetor[i] % 2 == 0) {
                 maiorPar = vetor[i];
-            }else {
-                System.out.println("Não existe");
+            }
+            if (vetor[i] > maiorPar) {
+                maiorPar = vetor[i];
             }
         }
-        System.out.println("Maior elemento par: " + maiorPar);
+        if (maiorPar == -1) {
+            System.out.println("Não há pares");
+        } else {
+                System.out.println("Maior par: " + maiorPar);
+            }
+        }
     }
-}
