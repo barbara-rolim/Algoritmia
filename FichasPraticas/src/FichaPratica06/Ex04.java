@@ -64,7 +64,7 @@ public class Ex04 {
 
                 case 4: // Perfeito
 
-                    if (primo(numero)) {
+                    if (perfeito(numero)) {
                         System.out.println("Perfeito");
                     } else {
                         System.out.println("Não Perfeito");
@@ -72,6 +72,11 @@ public class Ex04 {
                     break;
 
                 case 5: // Triangular
+                    if (triangular(numero)) {
+                        System.out.println("Triangular");
+                    } else {
+                        System.out.println("Não Triangular");
+                    }
                     break;
 
                 case 6: // Trocar de Número

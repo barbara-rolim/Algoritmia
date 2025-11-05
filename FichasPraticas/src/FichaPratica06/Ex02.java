@@ -9,12 +9,28 @@ import java.util.Scanner;
 public class Ex02 {
 
     public static boolean inteiroPositivo(int num) {
-        if (num >= 0 && num != (double) num) {
+        if (num >= 0) {
             return true;
         } else {
-            System.out.println("Número double || Negativo");
+            System.out.println("Número Negativo");
             return false;
         }
+    }
+
+    public static int lerInteiroPositivo() {
+
+        Scanner input = new Scanner(System.in);
+
+        int numero;
+
+        do {
+
+            System.out.print("Insira um número inteiro e positivo: ");
+            numero = input.nextInt();
+
+        } while (numero < 0);
+
+        return numero;
     }
 
     public static void main(String[] args) {
@@ -28,7 +44,8 @@ public class Ex02 {
         System.out.print("Insira um número para ser analisado: ");
         num = input.nextInt();
 
-        inteiroPositivo(num);{
+        inteiroPositivo(num);
+        {
             for (int i = 0; i < num; i++) {
                 System.out.print("*");
             }

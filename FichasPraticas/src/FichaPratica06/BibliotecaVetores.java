@@ -1,8 +1,12 @@
 package FichaPratica06;
 
-import java.util.Scanner;
+public class BibliotecaVetores {
 
-public class Ex05 {
+    /**
+     *
+     * @param vetor
+     * @return
+     */
     public static int maior(int[] vetor) {
         int maior = vetor[0]; //assume o maior
 
@@ -31,9 +35,14 @@ public class Ex05 {
 
         for (int i = 1; i < vetor.length; i++) {
             if (vetor[i] <= vetor[i - 1]) {
-                return false;
+                crescente = false;
             }
         }
-        return true;
+        if (crescente) {
+            return true;
+        } else {
+            return false;
+        }
     }
 }
+

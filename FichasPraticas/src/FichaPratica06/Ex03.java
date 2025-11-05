@@ -56,24 +56,40 @@ public class Ex03 {
      */
     public static boolean perfeito(int num) {
 
-        int soma = num;
-        for (int divisor = 0; divisor < num; divisor++) {
-            if (num % divisor == soma) {
-                return false;
+        int soma = 0;
+        for (int divisor = 1; divisor < num; divisor++) {
+            if (num % divisor == 0) {
+                soma += divisor;
             }
         }
-
-        return true;
+        return soma == num;
     }
 
     /**
      * Função que analisa um número e retorna se é triangular ou não
+     *
      * @param num Número a ser analisado
      * @return true se triangular || false se não triangular
      */
-    public static boolean triangular(int num){
-        // TODO: Corpo da função incompleto
-        return true;
+    public static boolean triangular(int num) {
+
+        int soma = 0;
+
+        for (int i = 1; i < num; i++) {
+            soma += i; // soma = soma + i
+
+            if (num == soma) {
+                return true;
+            }
+        }
+        return false;
     }
 }
+
+/**
+ * Função que analisa um número faz parte da sequencia Fibonacci
+ *
+ * @param num Número a ser analisado
+ * @return true se triangular || false se não triangular
+ */
 

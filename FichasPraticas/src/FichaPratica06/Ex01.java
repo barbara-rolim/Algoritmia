@@ -34,7 +34,7 @@ public class Ex01 {
                 break;
 
             default:
-                System.out.println("❌ Opção Inválida ❌");
+                System.out.println("❌ Barulho Desconhecido ❌");
                 break;
         }
     }
