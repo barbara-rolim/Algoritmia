@@ -11,29 +11,38 @@ import java.util.Scanner;
 
 public class Ex07 {
 
-    public static void calcularPalavrasElinhas(String caminho) throws FileNotFoundException {
+    public static int calcularLinhas(String caminho) throws FileNotFoundException {
 
         Scanner in = new Scanner(new File(caminho));
 
-        int numLinhas = 0;
-        int numPalavras = 0;
+        int contadorLinhas = 0;
+
 
         while (in.hasNextLine()) {
-            String linha = in.nextLine();
-            numLinhas++;
-
-            String[] itensDaLinha = linha.split(" ");
-            for (int i = 0; i < itensDaLinha.length; i++) {
-                if (!itensDaLinha[i].isEmpty()) {
-                    numPalavras++;
-                }
-            }
+            in.nextLine();
+            contadorLinhas++;
         }
-        System.out.println("Soma de Linhas: " + numLinhas + " e " + "Soma de Palavras: " + numPalavras);
+
+        return contadorLinhas;
     }
 
-    static void main(String[] args) throws FileNotFoundException {
+    public static int calcularPalavras(String caminho) throws FileNotFoundException {
+        Scanner in = new Scanner(new File(caminho));
 
-        calcularPalavrasElinhas("FichasPraticas/Ficheiros/exercicio_07.txt");
+        int contadorPalavras = 0;
+
+
+        while (in.hasNext()) {
+            in.next();
+            contadorPalavras++;
+        }
+
+        return contadorPalavras;
+    }
+
+    public static void main(String[] args) throws FileNotFoundException {
+
+        System.out.println("Linhas: "+calcularLinhas("FichasPraticas/Ficheiros/exercicio_07.txt"));;
+        System.out.println("Colunas: "+calcularPalavras("FichasPraticas/Ficheiros/exercicio_07.txt"));
     }
 }

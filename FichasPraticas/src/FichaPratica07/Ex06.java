@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 public class Ex06 {
 
-    public static void lerFicheiroStringEint(String caminho) throws FileNotFoundException {
+    public static String lerFicheiroStringEint(String caminho) throws FileNotFoundException {
 
         Scanner in = new Scanner(new File(caminho));
 
